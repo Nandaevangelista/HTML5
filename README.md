@@ -2,6 +2,8 @@
 Documento sobre a linguagem de marcação de construção de páginas 
 Linguagem de Marcação de HiperTexto - Independente do editor de texto utilizado essa linguagem de marcação poderá ser utilizada na construção de páginas de web. 
 
+Validate de estrutura [W3C](https://validator.w3.org/)
+
 ## 
 
  `<!DOCTYPE html>`é a instrução para o browser(navegador) de qual versão do HTML estamos trabalhando.
