@@ -4,13 +4,14 @@ Linguagem de Marcação de HiperTexto - Independente do editor de texto utilizad
 
 Validate de estrutura [W3C](https://validator.w3.org/)
 
-## 
+***
 
  `<!DOCTYPE html>`é a instrução para o browser(navegador) de qual versão do HTML estamos trabalhando.
 
 Os comandos de HTML são utilizados dentro de tags. As tags contém comandos, parâmetros e valores dos parâmetros.
 
-##
+***
+
 ```
 <html lang="pt-BR">
 </html>
@@ -20,28 +21,28 @@ O `<html` é a tag container raiz/root para todo o contéudo que será trabalhad
 
 * Contém fechamento `</html>` 
 
-##
+***
 
 `<head>` Cabeça da página - É o container para outras tags exclusivas que não são visíveis e sim de definições e configurações. 
 
 * Filho de `<html>`
 * Contém fechamento `</head>` 
 
-##
+***
 
 `<title>` filha de `<head>` que representa o título da página que é mostrado na barra de título no browser. 
 
 * Filho de `<head>`
 * Contém fechamento `</title>`
 
-##
+***
 
 `<body>` Tag Corpo da página. É o container de todos os elementos vísivel da página.
 
 * Filho de `<html>`
 * Contém fechamento `</body>`  
 
-##
+***
 
 `<p>` Tag de parágrafo e possui pré configurações. 
 * Elemento de fluxo - Elemento que marca o contéudo no corpo da página (visual).  
@@ -49,7 +50,7 @@ O `<html` é a tag container raiz/root para todo o contéudo que será trabalhad
 * Filho de `<body>`
 * Contém fechamento `</p>`
 
-##
+***
 
 `<h1>` 
 
@@ -89,7 +90,7 @@ Exemplo:
 ##### Título de nível 5 
 ###### Título de nível 6
 
-##
+***
 
 
 
