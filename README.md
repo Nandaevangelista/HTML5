@@ -42,3 +42,58 @@ O `<html` é a tag container raiz/root para todo o contéudo que será trabalhad
 * Contém fechamento `</body>`  
 
 ##
+
+`<p>` Tag de parágrafo e possui pré configurações. 
+* Elemento de fluxo - Elemento que marca o contéudo no corpo da página (visual).  
+* Display Block - significa que não aceita um contéudo na mesma linha que ele, automaticamente quebra linha.
+* Filho de `<body>`
+* Contém fechamento `</p>`
+
+##
+
+`<h1>` 
+
+`<h2>`
+
+`<h3>`
+
+`<h4>`
+
+`<h5>`
+
+`<h6>`
+Tags de cabeçalho, ou seja, títulos do conteúdo de texto que será descrito na página. 
+* Pré formatação padrão em sistema de hierarquia de níveis   
+* Categoria de cabeçalho
+* Display: Block 
+* Elemento de Fluxo 
+* Contém fechamento `</h1> </2> </3> </h4> </h5> </h6>`
+
+Exemplo: 
+
+`<h1>Título de nível 1</h1>`
+
+`<h2>Título de nível 2</h2>`
+
+`<h3>Título de nível 3</h3>`
+
+`<h4>Título de nível 4</h4>`
+
+`<h5>Título de nível 5</h5>`
+
+`<h6>Título de nível 6</h6>` 
+# Título de nível 1
+## Título de nível 2
+### Título de nível 3
+#### Título de nível 4
+##### Título de nível 5 
+###### Título de nível 6
+
+##
+
+
+
+
+
+
+ 
