@@ -91,7 +91,29 @@ Exemplo:
 ###### Título de nível 6
 
 ***
+`<a>` - Tag âncora - para links e conexões na página web como: arquivos, dowload, áudio, vídeo, imagem, endereços de emails, ligações na mesma página ou endereços na URL.
 
+Todos os elementos que podem ser colocados dentro da tag `<a>`, são parâmetros(pode haver mais de um) de configuração e todo parâmetro deve conter o nome="o valor". Veja os exemplos a baixo:
+
+`<a href(nome)="seu link aqui(valor)">Texto visível</a>`
+
+`<a href="nomedapasta/paginadentrodapasta">Texto visível</a>`- Organização de páginas dentro de pastas na programação do site.
+
+Abrir em uma nova aba:
+
+`<a href="https://github.com/Nandaevangelista" target="_blank">GitHub Nanda</a>`
+
+
+_parent
+_self
+_top
+framename
+
+
+
+
+
+* Contém fechamento `</a>` 
 
 
 
