@@ -167,6 +167,19 @@ Realiza o **download** de PDF ou arquivo ZIP do valor configurado para o nome do
 
 ***
 
+`<abbr>` - Abreviações -Mostra um label ao repousar o mouse em cima os caracteres da função 
 
+`<p> Esse é um pequeno dicinário sobre <abbr title="Hypertext Markup Language">HTML</abbr> </p>`
 
- 
+* Display: inline
+* Categoria: Fluxo e Fraseado(significa que usa textos no seu interior)
+* Atributos: title e [globais](https://www.w3.org/2009/cheatsheet/#inf,html,a,global%20HTML%20attributes)
+* Contém fechamento `</abbr>`
+
+*** 
+
+`<address>`  
+
+* Display: Block
+* Cateboria: Fluxo
+* Contém fechamento `</address>`
