@@ -1,8 +1,12 @@
-# HTML5
-Documento sobre a linguagem de marcação de construção de páginas 
-Linguagem de Marcação de HiperTexto - Independente do editor de texto utilizado essa linguagem de marcação poderá ser utilizada na construção de páginas de web. 
+# Base de HTML5 para hacking
 
-Validate de estrutura [W3C](https://validator.w3.org/)
+Documento sobre a linguagem de marcação de construção de páginas é a base para qualquer hacking na web. A importância de conhecimento da base é o início de qualquer carreira na área de segurança, ao contrário de que muitos dizem por aí, saber programar é um pré requisito para o hacking. 
+
+Esse dicionário é apenas um guia sobre tags, por tanto, não é um curso para aprender a desenvolver uma página web.
+
+> HTML é uma Linguagem de Marcação de HiperTexto - Independente do editor de texto utilizado essa linguagem de marcação poderá ser utilizada na construção de páginas de web. 
+
+SAIBA MAIS - Validate de estrutura [W3C](https://validator.w3.org/)
 
 ***
 
@@ -178,8 +182,79 @@ Realiza o **download** de PDF ou arquivo ZIP do valor configurado para o nome do
 
 *** 
 
-`<address>`  
+`<address>` Colocando informações de contato apropriada para o contexto, como endereço físico, URL, email, telefone, mídia social, coordenadas geográficas de pessoas físicas ou empresas.
+
+##
+
+```
+   <address>
+       Autor: W3C<br>
+       Informações direto do <a href="https://www.w3c.br" target="_blank">site oficial</a>
+   </address>
+ ```
+ 
+> *Autor: W3C*
+>
+> *Informações direto do [site oficial](https://www.w3c.br).*
+   
+##
 
 * Display: Block
 * Cateboria: Fluxo
+* Atributos: globais 
 * Contém fechamento `</address>`
+
+***
+
+`<article>` Representa uma composição de seção independente em um documento, página, aplicação, ou site, ou que é destinado a ser distribuido de forma independente ou reutilizável. Pode haver quantas tags *article* for necessário, cada uma representando uma área e assunto específico no documento, de conteúdos diferentes de cabeçalho, contéudo ou rodapé. 
+
+
+```
+<article>
+   <h1>HTML para Hacking</h1>
+   <p>Guia de base para hacking na web.</p> 
+</article>
+```
+
+* Display: Block
+* Categoria: Fluxo e Seção(área da página)
+* Atributos: Globais
+* Contém fechamento `</article>`
+
+***
+
+`<aside>` representa uma seção de uma página que consiste de conteúdo que é tangencialmente relacionado ao conteúdo do seu entorno, que poderia ser considerado separado do conteúdo principal. Essas seções são, muitas vezes, representadas como barras laterais. Elas muitas vezes contem explicações laterais, como a definição de um glossário; conteúdo vagamente relacionado, como avisos; a biografia do autor; ou, em aplicações web, informações de perfil ou links de blogs relacionados, agrupamento de publicidade, grupos e blocos de navegação e para qualquer outro conteúdo que é separado do conteúdo principal.
+
+Observação: não necessáriamente precisa estar na lateral na página, podendo incluir elementos de fluxo dentro dele como *atributos globais*.
+
+O elemento *aside* pode ir também dentro de um elemento *article* como uma caixa de notação ou algo do genêro. Nesse caso, quando o usuário printar, haverá ênfase a esta caixa como se fosse um box de informação.
+
+* Para a formatação é necessário conhecimento em CSS3
+* Display: Block
+* Categoria: Fluxo e Seção 
+* Atributos: Globais
+* Contém fechamento `</aside>`
+
+***
+
+`<audio>` Tag para inserir compenentes de áudio.
+
+`<audio src"seuaudio.mp3" autoplay controls loop></audio>
+
+* Display: None
+* Categoria: Fluxo, fraseado e incorporado.
+* Atributos: Globais; autoplay; preload; controls; loop; mediagroup;muted; src;
+* Contém fechamento `</audio>`
+
+***
+
+`<b>` Formatação em **negrito** - Trabalha diretamente no texto dando destaque à determinados elementos.
+
+`<p>Para o hacking é <b>importante</b> que você conheça a <b>linguagem de marcação html</b>`
+
+* Display: inline
+* Categoria: Fluxo e Fraseado
+* Contém fechamento `</b>`
+
+***
+
