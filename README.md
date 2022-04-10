@@ -341,6 +341,116 @@ O elemento *aside* pode ir também dentro de um elemento *article* como uma caix
 
 ***
 
+`<button>` Representa um botão clicável pré formatado mas que também pode ser formatado com as preferências do programador através do CSS3(Design) e JavaScript(atribuir ações). 
+
+> Tipos mais comuns em formulários:
+>
+> Submit: Para indicar os dados à um formulário.
+>
+> Reset: Limpa os campos do formulário, contém ações pré determinadas
+>
+> Button - Não tem ações pré determinadas, sendo configuradas em JavaScript
+
+* Display: Inline
+* Categoria: Fluxo,fraseado e interativo
+* Atributos: Type; Value; Globais;
+* Contém fechamento `</button>`
+
+*** 
+
+`<canvas>` - Representa uma área(tela de bitmap) que nos permite manipular os desenhos e mapeamento dos elementos. 
+
+* Utiliza JavaScript para ações
+* Display: Block
+* Categoria: Fluxo, fraseado, incorporado
+* Atributos: Globais; widht; height;
+* Contém fechamento `</canvas>`
+
+***
+
+`<code>` Apresenta de forma visível e não interpreta como código um texto em código. O seu conteúdo é impresso na tela estilizado de maneira a indicar/destacar que um texto é o fragmento de código dentro do contexto sem renderizar como um código propriamente dito: 
+
+Exemplo impresso: Estamos na *tag* `<code>` - A forma como esse código foi apresentado, será impresso na tela quando utilizar essa tag. 
+
+* A multi-utilização de `<br>` pode ser utilizada.
+* Display: Inline
+* Categoria: Fluxo e fraseado
+* Atributo: Globais
+* Contém fechamento `</code>`
+
+***
+
+`<del>` Representa um conteúdo que foi excluído ou marcado como eliminado no conteúdo. Formatação de riscado. ~Como nesse exemplo~
+
+Quando aplicado o atributo `<cite>` é para direcionar a url com o motivo que o conteúdo foi deletado.
+Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hora que esse conteúdo foi deletado.
+
+`<del cite="url" datetime="">Texto visível riscado (deletado)</del>`
+
+
+* Display: Inline-block
+* Categorria: Fluxo, contido por fraseado
+* Atributos: Cite; Datetime; Globais
+* Contém fechamento `</del>`
+
+***
+
+`<details>` e `<summary>` *detaisl* é interativo, usado como uma ferramenta onde o usuário irá obter informações adicionais. *Summary* é filho direto de *Details* - Trabalham em conjunto. Quando o usuário clicar no *título de details* vai **expandir** e mostrar o conteúdo, clicando novamente ele irá **ocultar** o conteúdo. E *summary* é utilizado como um sumário ou legenda para o conteúdo de um elemento *details*.
+ 
+```
+<details> 
+      <summary>Texto visível</summary>
+      <p>Conteúdo que vai aparecer quando for clicado</p>
+</details>
+``` 
+
+**Details**
+* Display: Block
+* Categoria: Fluxo; Interativo;
+* Atributo: Globais
+* Contém fechamento `</details>` e `</summary>` 
+
+***
+
+
+
+
+
+
+
+
+
+
+
+
+ ***
+ 
+`<ins>` Representa uma inserção/ algo que foi inserigo ao texto original. Sublinhado.
+
+`<ins cite="url" datetime="">Texto visível e sublinhado (inserido)</ins>`
+
+Quando aplicado o atributo `<cite>` é para direcionar a url com o motivo que o conteúdo foi inserido.
+Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hora que esse conteúdo foi inserido.
+
+* Display: Inline-block
+* Categorria: Fluxo, contido por fraseado
+* Atributos: Cite; Datetime; Globais
+* Contém fechamento `</ins>`
+
+***
+
+`<pre>` Apresenta um bloco de texto pré formatado. 
+
+* Display: Block
+* Categoria: Fluxo
+* Atributo: Globais; code; cols; width; wrap;
+* Contém fechamento `</pre>`
+
+***
+
+
+
+
 
 
 > :construction: Esse documento está em construção 
