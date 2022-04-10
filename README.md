@@ -239,7 +239,7 @@ O elemento *aside* pode ir também dentro de um elemento *article* como uma caix
 
 `<audio>` Tag para inserir compenentes de áudio.
 
-`<audio src"seuaudio.mp3" autoplay controls loop></audio>
+`<audio src"seuaudio.mp3" autoplay controls loop></audio>`
 
 * Display: None
 * Categoria: Fluxo, fraseado e incorporado.
@@ -250,7 +250,9 @@ O elemento *aside* pode ir também dentro de um elemento *article* como uma caix
 
 `<b>` Formatação em **negrito** - Trabalha diretamente no texto dando destaque à determinados elementos.
 
-`<p>Para o hacking é <b>importante</b> que você conheça a <b>linguagem de marcação html</b>`
+`<p>Para o hacking é <b>importante</b> que você conheça a <b>linguagem de marcação html</b>.`
+
+> Para o hacking é **importante** que você conheça a **linguagem de marcação html**.
 
 * Display: inline
 * Categoria: Fluxo e Fraseado
@@ -258,3 +260,91 @@ O elemento *aside* pode ir também dentro de um elemento *article* como uma caix
 
 ***
 
+`<base>` Facilitador do caminho - Não se utiliza mais do que uma base em um projeto.
+
+```
+<base href="arquivo_desejado">
+</head>
+<body>
+<a href="arquivo_da_tag_base">Texto visível</a>
+```
+
+* Só pode ser utilizado dentro de *head*
+* Display: None
+* Categoria: Metadados
+* Atributos: Globais; target; hreaf; 
+* Não contém fechamento
+
+***
+
+`<bdo>` Direção do texto - Muito utilizado em idiomas que se lê da direita para esquerda como por exemplo o idioma Árabe. 
+
+* ltr - esquerda para a direita.
+* rtl - direitapara a esquerda.
+
+`<bdo dir="rtl">Texto que deseja formatar</bdo>`
+
+> ratamrof ajesed euq otxeT
+
+* Display: inline
+* Categoria: Fluxo e Fraseaso
+* Atributo: Dir
+* Contém fechamento `</bdo>`
+
+***
+
+`<blockquote>` Tag de citação de conteúdo externo e  `<cite>` quando aplicado nessa situação vai especificar a origem da origem de *blockquote*. Veja os exemplos abaixo:
+
+```
+<blockquote>
+<p>Texto extraído de algum autor externo</p>
+</blockquote>
+```
+
+```
+<blockquote cite="url_externa">
+<p>Texto extraído de algum autor externo</p>
+</blockquote>
+```
+
+* Display: Block
+* Categoria: Fluxo e Seção 
+* Atributos: Globais e *cite*
+* Contém fechamento `</blockquote>`
+
+**SAIBA MAIS SOBRE:** `<cite>` - Representa o título de uma obra; referência aos autores; Receberá uma formação específica para a função de citação. 
+
+```
+<blockquote>
+<p>Texto extraído de algum autor externo.</p>
+<cite>Nome do autor</cite>
+</blockquote>
+```
+
+> *Texto extraído de algum autor externo.*
+> 
+> *Nome do autor*
+
+* Para melhor formatação é utilizado CSS3
+* Display: Inline
+* Categoria: Fluxo e fraseado 
+* Contém fechamento `</cite>` 
+
+***
+
+`<br>` Tag que representa quebra de linha dentro de endereços e poemas. Não é recomendado uso abusivo dessa *tag* e também mais de um *br* seguido, por exmeplo: `<br><br><br>`. Em casos de formações de textos se utiliza *tags* específicas como `<p>` com display block e formatações de estilo se utiliza o CSS3, que é o responsável exclusivamente para formação de design da página. 
+
+* Display: Inline
+* Categoria: Fluxo e fraseado
+* Atributos: Globais
+* Não contém fechamento 
+
+***
+
+
+
+> :construction: Esse documento está em construção 
+> 
+> Fernanda Evangelista 
+> 
+> 10/04/2022 :construction:
