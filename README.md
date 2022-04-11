@@ -17,6 +17,10 @@ SAIBA MAIS - Validate de estrutura [W3C](https://validator.w3.org/)
 - [B](#ancoraB)
 - [C](#ancoraC)
 - [D](#ancoraD)
+- [E](#ancoraE)
+- [F](#ancoraF)
+
+- [Formulário](#ancoraformulario)
 
 <a id="ancoraPRINCIPAL"></a>
 
@@ -474,6 +478,168 @@ Usando o atributo title, surgirá um label quando o mouse pousar em cima da abre
 * Atributos: Globais; open;
 * Contém fechamento: </dialog>
 
+***
+
+`<div>` Container/complemento de organização para qualquer elemento. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id).
+
+Exemplo de organização utilizando a tag *div* dentro de um *article* 
+
+##
+
+```
+<article>
+         <div> 
+              <h1>Dicinário html</h1>
+                  <p>Guia com definição e utilização das tags por ordem alfabetica.</p>
+                  <p>Esse documento é a base para o curso de html para hacking</p>
+         </div>
+<article>
+```
+
+# 1 Dicinário html
+
+Guia com definição e utilização das tags por ordem alfabetica.
+
+Esse documento é a base para o curso de html para hacking
+
+##
+
+* Display: Block
+* Categoria: Fluxo
+* Atributos: Globais
+* Contém fechamento: `</div>`
+
+***
+
+`<dl> <dt> <dd>` Listas de definição - São constituidas de duas partes: um **termo** e uma **descrição**. Para codificar uma lista de definição são necessários três elementos *dl dt dd* trabalham juntas: `<dl>` container(árvore); `<dt>` termo de definição(título); `<dd>` descrição do valor(conteúdo relacionado ao título); 
+
+##
+
+```
+<dl> 
+    <dt>Dicinário html para hacking</dt
+        <dd>Tags com letra - A</dd>
+        <dd>Tags com letra - B</dd>
+</dl>        
+```
+
+##
+
+`<dl>`
+* Display: Blcok
+* Categoria: Fluxo
+* Filhos: `<dt>` e `<dd>` 
+* Atributos: Globais
+* Contém fechamento: `</dl>`
+
+`<dt>`
+* Display: Block
+* Categoria: Fluxo
+* Contigo por: `<dl>` e `<dialog>`
+* Contém fechamento: `</dt>`
+
+`<dd>`
+* Display: Block
+* Categoria: Fluxo
+* Contifo por: `<dl>` e `<dialog>`
+* Contém fechamento: `</dd>` 
+
+***
+
+<a id="ancoraE"></a>
+# E
+
+ `<em>` Destacar ênfase em um parágrafo. 
+
+`<p>Guia base de <em>html</em> para <em>hacking</em>.</p>`
+> Guia base de *html* para *hacking*.
+
+
+* Display: Inline
+* Categoria: Fluxo e fraseado
+* Atributos: Globais
+* Contém fechamento: `</em>`
+
+***
+
+`<embed>` Representa uma área com ponto de interação de arquivo externo, ou seja, incorporar um conteúdo externo que pode ser interativo.
+
+`<embed src"link_externo">`
+
+* Categoria: Fluxo; Fraseado; Incorporado;
+* Atributos: src; type; width; height;
+* Não cotém fechamento.
+
+***
+
+<a id="ancoraF"></a>
+# F 
+
+`<figure>` Representa um conteúdo de fluxo, uma legenda/container associado à um conteúdo. **OBS:** Não tem relação com imagens como o nome pode acabar sugerindo a associação.
+
+*figcaption* é a legenda do conteúdo *figure* - Identação/organização de projeto em estabelecido. 
+
+```
+<figure>
+        <p>Guia base de HTML para Hacking</p>
+           <figcaption>Dicionário para iniciantes na área de segurança de informação
+           </figcaption>
+</figure>
+```
+
+```
+<figure>
+        <img src="https://logosmarcas.net/wp-content/uploads/2020/09/Google-Logo.png">
+        <figcaption>
+           www.google.com
+        </figcaption>
+</figure>        
+```
+
+* Display: Block
+* Categoria: Fluxo; Seção;
+* Atributos: `<figcaption>`
+* Contém fechamento: `</figure>`
+
+***
+
+`<footer>` Tag de seção própria para rodapés do contexto em que ela está inserida, seja da página ou de outras seções.
+Exemplos de rodapés de páginas web podem contém muitos elementos diferentes como audio, tabelas, referências e etc. 
+
+* Formatado por CSS
+* Display: Block
+* Categoria: Fluxo; Seção;
+* Atributos: Globais
+* Contém fechamento: `</footer>`
+
+***
+
+<a id="ancoraformulario"></a>
+`<form>` Elemento de formuários. Representa uma coleção de elementos de um determinado formulário. Container do formulário. 
+
+``` 
+<from name="fcadastro" action="" method="">
+    <label>Nome:</label> 
+       <input type="text" name="fname" 
+</from> 
+```    
+
+[label](#ancoralabel) 
+
+* Display: Block
+* Categoria: Fluxo
+* Atributos: 
+  * `<action>` - URL com o arquivo que irá receber o conteúdo do formulario/os dados enviados.
+  * `<autocomplete>` - Autocompleta campos ativados.
+  * `<enctype>` - Codificação (tipo) dos dados enviados.
+  * `<method>`- Método de envio dos dados (get ou post).
+  * `<name>` - Nome do formulário.
+  * `<novalidade>` - Desabilita a validação pelo browser.
+  * `<target>` - Como a página de destino (action) será aberta, se será aberta na página atual ou em um frame específico.
+* Contém fechamento: </form>
+
+
+
 
 
 
@@ -489,6 +655,17 @@ Usando o atributo title, surgirá um label quando o mouse pousar em cima da abre
 * Atributos:
 * Contém fechamento:
  
+`<input>`
+
+* Display: Inline
+* Categoria: Fluxo; Fraseado; Interativo
+* Atributos:
+   *  `<type>` Determina o tipo do elemento; 
+   *  `<name>` O nome do componente (identificação dos elementos- NÃO VISÍVEL);
+* Não contém fechamento
+
+***
+
 `<ins>` Representa uma inserção/ algo que foi inserigo ao texto original. Sublinhado.
 
 `<ins cite="url" datetime="">Texto visível e sublinhado (inserido)</ins>`
@@ -500,6 +677,15 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 * Categorria: Fluxo, contido por fraseado
 * Atributos: Cite; Datetime; Globais
 * Contém fechamento `</ins>`
+
+***
+<a id="ancoralabel"></a>
+`<label>` Representa uma legenda
+
+* Display: Inline
+* Categoria: Fluxo; Fraseado;
+* Atributos: 
+* Contém fechamento: `</label>` 
 
 ***
 
