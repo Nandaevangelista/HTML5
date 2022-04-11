@@ -618,13 +618,14 @@ Exemplos de rodapés de páginas web podem contém muitos elementos diferentes c
 `<form>` Elemento de formuários. Representa uma coleção de elementos de um determinado formulário. Container do formulário. 
 
 ``` 
-<from name="fcadastro" action="" method="">
+<from name="fcadastro" action="#" method="get">
     <label>Nome:</label> 
        <input type="text" name="fname" 
 </from> 
 ```    
 
-[label](#ancoralabel) 
+*action* e*method* vão funcionar quando um botão for acionado (usado PHP para isso) 
+Quando uma programação *method* é do tipo *get* as informações são direcionadas e gravadas diretamente na URL o que pode causar uma vulnerabilidade, já do tipo *post* pode ser direcionado diretamente impresso na página, mas esse assunto será explicado posteriormente conforme avançamos em hacking. 
 
 * Display: Block
 * Categoria: Fluxo
@@ -638,33 +639,51 @@ Exemplos de rodapés de páginas web podem contém muitos elementos diferentes c
   * `<target>` - Como a página de destino (action) será aberta, se será aberta na página atual ou em um frame específico.
 * Contém fechamento: </form>
 
+##
 
+`<label>` Representa uma legenda - Locasl onde o usuário irá preencher - útil no trabalho com formulários. Ela especifica qual o "rótulo" do *input* (a que se refere o input), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.
 
+* Display: Inline
+* Categoria: Fluxo; Fraseado;
+* Contém fechamento: `</label>` 
 
-
-
-
-
-
-
-*** 
-***
-
-* Display:
-* Categoria: 
-* Atributos:
-* Contém fechamento:
+##
  
 `<input>`
 
 * Display: Inline
 * Categoria: Fluxo; Fraseado; Interativo
 * Atributos:
-   *  `<type>` Determina o tipo do elemento; 
-   *  `<name>` O nome do componente (identificação dos elementos- NÃO VISÍVEL);
-* Não contém fechamento
+   *  `<type>` Determina o tipo do elemento; Todos abaixo são botões, porém cada um tem um comportamento/função pré definida:
+    1. `<input type="text">` - Cria campos de texto básicos em uma linha única.
+    2. `<input type="submit">` - Envio dos dados inseridos no formulário (PHP cuidará desses dados, processará e guardar- `method="#"` e `action="#"` serão responsáveis para essa funcionalidade).
+    3. `<input type="reset">` - Limpeza dos campos desse formulário.
+    4. `<input type="button">` - Elemento que não tem comportamento pré definido, podendo ser manipulado manualmente. 
+    5. `<input type="name">` O nome do componente (identificação dos elementos- NÃO VISÍVEL);
+    6. `<input type="password>"` - Input para trabalhar com senhas - Quando o conteúdo é digitado ele não fica impresso na tela do usuário. 
+    7. `maxlength="#"` Limitar quantidade de caracteres em senha `maxlength="8"` máximo de 8 caracteres.
+    8. `size="#"` Limita visualmente o tamanho da caixa do formulário.  
+    9. `<input type="checkbox">` Caixa de seleção que pode ser marcada e desmarcada, podendo selecionar/marcar mais de uma opção.
+    10. `<input type="radio">` Caixa de seleção que pode ser marcada ou selecionada por apenas uma opção. 
+* *input* não contém fechamento.
+
+
+
+
+
+
+
+
+
+
 
 ***
+***
+
+* Display:
+* Categoria: 
+* Atributos:
+* Contém fechamento:
 
 `<ins>` Representa uma inserção/ algo que foi inserigo ao texto original. Sublinhado.
 
@@ -679,15 +698,6 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 * Contém fechamento `</ins>`
 
 ***
-<a id="ancoralabel"></a>
-`<label>` Representa uma legenda
-
-* Display: Inline
-* Categoria: Fluxo; Fraseado;
-* Atributos: 
-* Contém fechamento: `</label>` 
-
-***
 
 `<pre>` Apresenta um bloco de texto pré formatado. 
 
@@ -697,11 +707,7 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 * Contém fechamento `</pre>`
 
 ***
-
-
-
-
-
+***
 
 > :construction: Esse documento está em construção 
 > 
