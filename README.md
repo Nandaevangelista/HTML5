@@ -10,6 +10,18 @@ SAIBA MAIS - Validate de estrutura [W3C](https://validator.w3.org/)
 
 ***
 
+<a name="ancora"></a>
+# TAGS POR LETRA
+- [Tags iniciais](#ancoraPRINCIPAL)
+- [A](#ancoraA)
+- [B](#ancoraB)
+- [C](#ancoraC)
+- [D](#ancoraD)
+
+<a id="ancoraPRINCIPAL"></a>
+
+# Tags base para inicio de projeto
+
  `<!DOCTYPE html>`é a instrução para o browser(navegador) de qual versão do HTML estamos trabalhando.
 
 Os comandos de HTML são utilizados dentro de tags. As tags contém comandos, parâmetros e valores dos parâmetros.
@@ -95,6 +107,10 @@ Exemplo:
 ###### Título de nível 6
 
 ***
+
+<a id="ancoraA"></a>
+# A
+
 `<a>` - Tag âncora - para links e conexões na página web como: arquivos, dowload, áudio, vídeo, imagem, endereços de emails, ligações na mesma página ou endereços na URL.
 
 Todos os elementos que podem ser colocados dentro da tag `<a>`, são parâmetros(pode haver mais de um) de configuração e todo parâmetro deve conter o nome="o valor".
@@ -248,6 +264,9 @@ O elemento *aside* pode ir também dentro de um elemento *article* como uma caix
 
 ***
 
+<a id="ancoraB"></a>
+# B
+
 `<b>` Formatação em **negrito** - Trabalha diretamente no texto dando destaque à determinados elementos.
 
 `<p>Para o hacking é <b>importante</b> que você conheça a <b>linguagem de marcação html</b>.`
@@ -358,6 +377,9 @@ O elemento *aside* pode ir também dentro de um elemento *article* como uma caix
 
 *** 
 
+<a id="ancoraC"></a>
+# C
+
 `<canvas>` - Representa uma área(tela de bitmap) que nos permite manipular os desenhos e mapeamento dos elementos. 
 
 * Utiliza JavaScript para ações
@@ -379,6 +401,8 @@ Exemplo impresso: Estamos na *tag* `<code>` - A forma como esse código foi apre
 * Contém fechamento `</code>`
 
 ***
+<a id="ancoraD"></a>
+# D
 
 `<del>` Representa um conteúdo que foi excluído ou marcado como eliminado no conteúdo. Formatação de riscado. ~Como nesse exemplo~
 
@@ -407,11 +431,48 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 **Details**
 * Display: Block
 * Categoria: Fluxo; Interativo;
-* Atributo: Globais
+* Atributo: Globais; open;
 * Contém fechamento `</details>` e `</summary>` 
 
 ***
 
+`<dfn>` Representa uma instância de definição de um termo, ou seja, a representação/abreviação de uma definição. 
+
+```
+<p>
+   <dfn>HTML</dfn>
+   Hypertext Markup Language é uma linguagem de marcação utilizada na construção de páginas na WEB
+</p>
+```
+
+Usando o atributo title, surgirá um label quando o mouse pousar em cima da abreviação *dfn*.
+
+```
+<p>
+   <dfn title="Hypertext Markup Language">HTML</dfn>
+   É uma linguagem de marcação utilizada na construção de páginas na WEB
+</p>
+```
+
+
+* Display: Inline
+* Categoria: Fluxo; fraseado;
+* Atributo: title; Globais;
+* Contém fechamento: `</dfn>` 
+
+***
+
+`<dialog>` Tag para definir uma caixa de diálogo ou outro componente interativo, tal como um inspetor ou janela. 
+
+```
+<dialog open>
+     Olá Mundo!
+</dialog>    
+```
+
+* Categoria: Fluxo 
+* Atributos: Globais; open;
+* Contém fechamento: </dialog>
 
 
 
@@ -420,10 +481,13 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 
 
 
+*** 
+***
 
-
-
- ***
+* Display:
+* Categoria: 
+* Atributos:
+* Contém fechamento:
  
 `<ins>` Representa uma inserção/ algo que foi inserigo ao texto original. Sublinhado.
 
