@@ -615,6 +615,9 @@ Exemplos de rodapés de páginas web podem contém muitos elementos diferentes c
 ***
 
 <a id="ancoraformulario"></a>
+
+## FORMULÁRIO: 
+
 `<form>` Elemento de formuários. Representa uma coleção de elementos de um determinado formulário. Container do formulário. 
 
 ``` 
@@ -653,30 +656,72 @@ Quando uma programação *method* é do tipo *get* as informações são direcio
 
 * Display: Inline
 * Categoria: Fluxo; Fraseado; Interativo
-* Atributos:
-   *  `<type>` Determina o tipo do elemento; Todos abaixo são botões, porém cada um tem um comportamento/função pré definida:
-    1. `<input type="text">` - Cria campos de texto básicos em uma linha única.
-    2. `<input type="submit">` - Envio dos dados inseridos no formulário (PHP cuidará desses dados, processará e guardar- `method="#"` e `action="#"` serão responsáveis para essa funcionalidade).
-    3. `<input type="reset">` - Limpeza dos campos desse formulário.
-    4. `<input type="button">` - Elemento que não tem comportamento pré definido, podendo ser manipulado manualmente. 
-    5. `<input type="name">` O nome do componente (identificação dos elementos- NÃO VISÍVEL);
-    6. `<input type="password>"` - Input para trabalhar com senhas - Quando o conteúdo é digitado ele não fica impresso na tela do usuário. 
-    7. `maxlength="#"` Limitar quantidade de caracteres em senha `maxlength="8"` máximo de 8 caracteres.
-    8. `size="#"` Limita visualmente o tamanho da caixa do formulário.  
-    9. `<input type="checkbox">` Caixa de seleção que pode ser marcada e desmarcada, podendo selecionar/marcar mais de uma opção.
-    10. `<input type="radio">` Caixa de seleção que pode ser marcada ou selecionada por apenas uma opção. 
+
+
+   `<type>` Determina o tipo do elemento; Todos abaixo são botões, porém cada um tem um comportamento/função pré definida:
+   
+    `<input type="text">` - Cria campos de texto básicos em uma linha única.
+    
+    `<input type="submit">` - Envio dos dados inseridos no formulário (PHP cuidará desses dados, processará e guardar- `method="#"` e `action="#"` serão responsáveis para essa funcionalidade).
+    
+    `<input type="reset">` - Limpeza dos campos desse formulário.
+    
+    `<input type="button">` - Elemento que não tem comportamento pré definido, podendo ser manipulado manualmente. 
+    
+    `<input type="name">` O nome do componente (identificação dos elementos- NÃO VISÍVEL);
+    
+    `<input type="password>"` - Input para trabalhar com senhas - Quando o conteúdo é digitado ele não fica impresso na tela do usuário. 
+    * `input type="password" name="f_senha" pattern="[a-zA-Z0-9]"{12}` Indicará que a senha obrigatoriamente precisa ter `{12}` 12 digitos, sendo caracteres de `[a-z` *a à z* minúsculo, `A-Z` *A à Z* maiúsculo e `0-9]` *0 à 9* números. 
+    
+    `maxlength="#"` Limitar quantidade de caracteres em senha `maxlength="8"` máximo de 8 caracteres.
+    
+    `size="#"` Limita visualmente o tamanho da caixa do formulário. 
+    
+    `<input type="checkbox">` Caixa de seleção que pode ser marcada e desmarcada, podendo selecionar/marcar mais de uma opção.
+    
+    `<input type="radio">` Caixa de seleção que pode ser marcada ou selecionada por apenas uma opção. 
+    
+    `<input type="time">` Elemento para trabalhar com horário, ele contém recursos que facilitam a inserção de horário. (Ao acrescentar `<min="#">` e `<max="#">` determinará horario mínimo e máximo de uma determinada função de acordo do que se trata a web).
+    
+    `<input type="date">` Elemento para trabalhar com horário, podendo também determinar mínimo e máximo de data. Campo de calendário visual será automático. 
+    
+    `<input type="datetime-local">` Elemento com as duas tags acima dentro do mesmo componente. 
+    
+    `<input type="month">` Meses da data selecionada.
+    
+    `<input type="week">` Semanas da data selecionada.
+    
+    `<input type="hidden">` É um atributo booleano que indica se um elemento é ou não relevante. Por exemplo, ele pode ser usado para esconder elementos de página que não podem ser usados até que o processo de login seja completo. Não é um elemento visível que passa informações/valores de gravação de dados.
+    
+    `<input type="color">` Permite que o usuário selecione uma cor(Podendo ser utilizado para templates com Javascript para personalização de preferência do usuário para uma melhor experiência).
+    
+    `<input type="email">` Possui autovalidação de e-mail, ou seja, com obrigatóriedade de completar o campo com uma informação válida. 
+    
+    `<input type="image">` Permite a inserção de uma imagem para o formulário, substituindo o botão de enviar. 
+    
+    `<input type="tel">` Precisa de propriedade `pattern` e `placeholder` para indicar um padrão de número de telefone: 
+    * `pattern="\([0-9]{2}\)"` sendo `\( \)` Especificando *( )* parenteses e `[0-9]{2}` dois digitos de 0 à 9.
+    * `pattern="\([0-9]{2}\)[9]{1}"` sendo `[9]{1}` dando obrigatoriedade iniciar com digito 9.
+    * `pattern="\([0-9]{2}\)[9]{1}"[0-9]{4}` sendo `[0-9]{4}` onde o usuário preencherá 4 digitos de 0 a 9.
+    * `pattern="\([0-9]{2}\)[9]{1}"[0-9]{4}-` será printado "-"
+    * `pattern="\([0-9]{2}\)[9]{1}"[0-9]{4}-[0-9]{4}` sendo `[0-9]{4}` onde o usuário preencherá os 4 últimos dígitos de 0 à 9.
+    * (xx)9xxxx-xxxx 
+
+    `<input type="number">` Permite selecionar números. 
+    * `<input type="number" name=f_numero step="2" min="0" max="10">` Sendo indicação `min="0"` que o mínimo é 0 e `max="x"` o número máximo que aparecerá para selecionar e `step="x"` indica quantos caracteres é permitido, nesse mesmo exemplo `step="2"` que será *xx* ou ainda `step="3"` *xxx* por preferência do programador.  
+
+    
+    `<input type="search">` Campo de texto próprio para entrada de string para pesquisa. Contém padrão pré-definido, podendo usar JavaScript e PHP em sua elaboração. 
+    
+    
+
+    
+    
+    
+    
 * *input* não contém fechamento.
 
-
-
-
-
-
-
-
-
-
-
+***
 ***
 ***
 
