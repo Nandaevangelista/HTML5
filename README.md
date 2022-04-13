@@ -70,6 +70,15 @@ O `<html` Tag container raiz/root para todo o contéudo que será renderizado no
 
 ***
 
+ `<link rel="stylesheet" href="style.css">` Dentro do *head* vai *style.css* extenção de arquivo CSS3 para a aplicação 
+
+`<link` Ligação dos arquivos 
+`rel=" "` Relação desse link 
+`stylesheet` Folha de estilo 
+`href=" "` Endereço de referência - E o valor é onde o arquivo está 
+
+***
+
 `<body>` Tag Corpo da página. É o container de todos os elementos vísivel da página.
 
 * Filho de `<html>`
