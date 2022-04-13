@@ -13,13 +13,13 @@ SAIBA MAIS - Validate de estrutura [W3C](https://validator.w3.org/)
 <a name="ancora"></a>
 # TAGS POR LETRA
 - [Tags iniciais](#ancoraPRINCIPAL)
+- [Identificadores](#ancoraINDETIFICADORES)
 - [A](#ancoraA)
 - [B](#ancoraB)
 - [C](#ancoraC)
 - [D](#ancoraD)
 - [E](#ancoraE)
 - [F](#ancoraF)
-
 - [Formulário](#ancoraformulario)
 
 <a id="ancoraPRINCIPAL"></a>
@@ -131,6 +131,16 @@ Exemplo:
 #### Título de nível 4
 ##### Título de nível 5 
 ###### Título de nível 6
+
+***
+
+<a id="ancoraIDENTIFICADORES"</a>
+# IDENTIFICADORES
+
+Há dois tipos de identificadores *class* e *id*. Veja abaixo:
+
+`class` Identificador responsável por separar em classes mais de uma propriedade. Marca os itens para posteriormente poder adicionar estilos(CSS). `class=" "` É preciso dar um nome para essa classifcação para posteriormente ser identificada para aplicação das funções. Em CSS para identificar *class* é utilizado o caractere **.** (ponto) antes do nome, como por exemplo, no HTML o código ficará `<li class="tags">TAG h1 - Título de nível 1</li>` representando uma linha de uma lista contínua, e no CSS `.tags{ }` *"tags"* foi o nome para idenfiticar tudo o que queremos manter padrão de design. 
+`id` É um identificador único, ele não pode ser nomeado mais de uma vez. Adicionamos a propriedade `id=" "` nomeando-a para que seja identificada para aplicação da função.`<p id="missao">Nossa missão é proporcionar o conhecimento da base o desenvolvimento em seguranã cibernética<p>` para que esse *parágrafo* possa ser idenfiticado separadamente de todos os outros que fazem parte do projeto, e será idenficado pelo CSS da seguinte maneira: `#missao { }` com *#* (cerquilha) na frente do nome que foi dado para identificá-lo.  
 
 ***
 
