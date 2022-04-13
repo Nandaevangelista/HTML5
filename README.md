@@ -688,20 +688,33 @@ Quando uma programação *method* é do tipo *get* as informações são direcio
 
 * Display: Inline
 * Categoria: Fluxo; Fraseado; Interativo
+* Não contém fechamento.
 
 
    `<type>` Determina o tipo do elemento; Todos abaixo são botões, porém cada um tem um comportamento/função pré definida:
    
+   ##
+   
     `<input type="text">` - Cria campos de texto básicos em uma linha única.
-    
+   
+   ##
+   
     `<input type="submit">` - Envio dos dados inseridos no formulário (PHP cuidará desses dados, processará e guardar- `method="#"` e `action="#"` serão responsáveis para essa funcionalidade).
-    
+   
+   ##
+   
     `<input type="reset">` - Limpeza dos campos desse formulário.
-    
+   
+   ##
+   
     `<input type="button">` - Elemento que não tem comportamento pré definido, podendo ser manipulado manualmente. 
-    
+   
+   ##
+   
     `<input type="name">` O nome do componente (identificação dos elementos- NÃO VISÍVEL);
-    
+   
+   ##
+   
     `<input type="password>"` - Input para trabalhar com senhas - Quando o conteúdo é digitado ele não fica impresso na tela do usuário. 
     * `input type="password" name="f_senha" pattern="[a-zA-Z0-9]"{12}` Indicará que a senha obrigatoriamente precisa ter `{12}` 12 digitos, sendo caracteres de `[a-z` *a à z* minúsculo, `A-Z` *A à Z* maiúsculo e `0-9]` *0 à 9* números. 
     
@@ -709,27 +722,51 @@ Quando uma programação *method* é do tipo *get* as informações são direcio
     
     `size="#"` Limita visualmente o tamanho da caixa do formulário. 
     
+    ##
+    
     `<input type="checkbox">` Caixa de seleção que pode ser marcada e desmarcada, podendo selecionar/marcar mais de uma opção.
+    
+    ##
     
     `<input type="radio">` Caixa de seleção que pode ser marcada ou selecionada por apenas uma opção. 
     
+    ##
+    
     `<input type="time">` Elemento para trabalhar com horário, ele contém recursos que facilitam a inserção de horário. (Ao acrescentar `<min="#">` e `<max="#">` determinará horario mínimo e máximo de uma determinada função de acordo do que se trata a web).
+    
+    ##
     
     `<input type="date">` Elemento para trabalhar com horário, podendo também determinar mínimo e máximo de data. Campo de calendário visual será automático. 
     
+    ##
+    
     `<input type="datetime-local">` Elemento com as duas tags acima dentro do mesmo componente. 
+    
+    ##
     
     `<input type="month">` Meses da data selecionada.
     
+    ##
+    
     `<input type="week">` Semanas da data selecionada.
+    
+    ##
     
     `<input type="hidden">` É um atributo booleano que indica se um elemento é ou não relevante. Por exemplo, ele pode ser usado para esconder elementos de página que não podem ser usados até que o processo de login seja completo. Não é um elemento visível que passa informações/valores de gravação de dados.
     
+    ##
+    
     `<input type="color">` Permite que o usuário selecione uma cor(Podendo ser utilizado para templates com Javascript para personalização de preferência do usuário para uma melhor experiência).
+    
+    ##
     
     `<input type="email">` Possui autovalidação de e-mail, ou seja, com obrigatóriedade de completar o campo com uma informação válida. 
     
+    ##
+    
     `<input type="image">` Permite a inserção de uma imagem para o formulário, substituindo o botão de enviar. 
+    
+    ##
     
     `<input type="tel">` Precisa de propriedade `pattern` e `placeholder` para indicar um padrão de número de telefone: 
     * `pattern="\([0-9]{2}\)"` sendo `\( \)` Especificando *( )* parenteses e `[0-9]{2}` dois digitos de 0 à 9.
@@ -737,21 +774,114 @@ Quando uma programação *method* é do tipo *get* as informações são direcio
     * `pattern="\([0-9]{2}\)[9]{1}"[0-9]{4}` sendo `[0-9]{4}` onde o usuário preencherá 4 digitos de 0 a 9.
     * `pattern="\([0-9]{2}\)[9]{1}"[0-9]{4}-` será printado "-"
     * `pattern="\([0-9]{2}\)[9]{1}"[0-9]{4}-[0-9]{4}` sendo `[0-9]{4}` onde o usuário preencherá os 4 últimos dígitos de 0 à 9.
-    * (xx)9xxxx-xxxx 
+    * (xx)9xxxx-xxxx
+
+    ##
 
     `<input type="number">` Permite selecionar números. 
     
+    ##
+    
     `<input type="number" name=f_numero step="2" min="0" max="10">` Sendo indicação `min="0"` que o mínimo é 0 e `max="x"` o número máximo que aparecerá para selecionar e `step="x"` indica quantos caracteres é permitido, nesse mesmo exemplo `step="2"` que será *xx* ou ainda `step="3"` *xxx* por preferência do programador.  
+  
+    ## 
   
     `<input type="search">` Campo de texto próprio para entrada de string para pesquisa. Contém padrão pré-definido, podendo usar JavaScript e PHP em sua elaboração. 
     
+    ##
     
+    `<input type="file">` Elemento responsável para permitir submeter/anexar um conteúdo/arquivo.
+    
+    ```
+    <label>Selecione o arquivo:</label>
+    <input type="file" name="f_arquivo">
+    ```
+    
+    * `<input type="file" name="f_arquivo" multiple>` *multiple*Permite a seleção de mais de um arquivo.
+    * `<input type="file" name="f_arquivo" accept=" ">"` Indicará qual tipo de arquivo permite ser anexado. Podendo ser:
+    * `accept=".doc,.docx,"`
+    * `accept="application/mswrod"`
+    * `accept="image/*,.pdf"`
+    * `accept=".jpg,.gif,.png"`
+    * `accept="image/jpg,image/gif,image/png"`
 
+    **OBSERVAÇÃO:** Ao trabalhar com envios de arquivos, o `enctype=" "` precisa ser trabalho dentro da tag `<form>` - [FORM](#ancoraformulario)
+ 
+    ##
     
+    `input type="url"`
+  
+    * `placeholder` Para dar exemplo de como o usuário deve seguir:
     
-    
-    
-* *input* não contém fechamento.
+    ```
+    <label>Digite o URL:</label>
+    <input type="url" name=f_url" placeholder="https://SEU_EXEMPLO_AQUI">
+    ```
+   
+    * `pattern` Para fazer a validação de ser uma *url*: 
+
+    ```<label>Digite o URL:</label>
+    <input type="url" name=f_url" placeholder="https://.*">
+    ```
+
+    ##
+
+    `<input list="f_cor">` - Caixa de listagem dependente os elementos da lista com *datalist*. Também faz filtragem durante digitação (interatividade com o usuário).
+
+    ```
+    <form name="f_cadastro" action="#" method="get">
+       <input list="f_cores" name=f_cor>
+       <datalist id="f_cores">
+          <option value="white">Branco</option>
+          <option value="black">Preto</option>
+          <option value="blue">Azul</option>
+          <option value="red">Vermelho</option>
+          <option value="green">Verde</option>
+       </datalist>
+    ```
+   
+##
+
+`select` Permite selecionar um conjunto de opções. Todos os elementos de selection são `<option></option>` 
+
+```
+<select name="f_genero">
+<option value="F">Feminino</option>
+<option value="M">Masculino</option>
+<option value="N">Prefiro não especificar</option>
+</select>
+
+```
+
+   * `value="#"` Enviará a informção ao banco de dados, definido no sistema.
+   * `multiple` Vai permitir selecionar mais de uma opção.
+   * `size="x"` Deixará visivel a quantidade de opções que enumerar. 
+   * Contém fechamento `</select>`
+
+##
+
+`<fieldset>` Representa um conjunto de controles dentro de um grupo. Através de *JavaScript* é possível fazer o controle de não poder fazer alterações quando já tiver sido preenchida ou selecionada.  
+    * `<legend>` Apresenta legenda para os grupos de forumários por sua categorias.
+
+* Display: Block
+* Categoria: Fluxo
+* Filho direto: legend
+* Contém fechamento: `</fieldset>` 
+
+##
+
+`textarea` Representa uma área de texto, com o diferencial de multilinha, ou seja, uma área onde pode ser escrito frase ou texto simples. 
+
+`cols=" "` Quantas linhas visual 
+`rows=" "` Quantas colunas visual
+`maxlength=" "` Quantos caracteres são permitidos
+`autofocus` Indicará se o componente terá auto foco ou não, poder tipo boolean 
+
+* Display: Inline
+* Categoria: Fluxo; Fraseado;Interativo;  
+* Atributos: `cols`; `rows`; `maxlength`; `autofocus`;
+* Contém fechamento: `</textarea>`
+
 
 ***
 ***
