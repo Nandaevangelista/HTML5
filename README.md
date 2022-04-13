@@ -26,27 +26,40 @@ SAIBA MAIS - Validate de estrutura [W3C](https://validator.w3.org/)
 
 # Tags base para inicio de projeto
 
- `<!DOCTYPE html>`é a instrução para o browser(navegador) de qual versão do HTML estamos trabalhando.
-
+ `<!DOCTYPE html>`é a instrução para o browser(navegador) que estamos trabalhando com a última versão disponível do HTML. Escrita em caixa alta. 
 Os comandos de HTML são utilizados dentro de tags. As tags contém comandos, parâmetros e valores dos parâmetros.
+
+* Não contém fechamento
 
 ***
 
 ```
 <html lang="pt-BR">
-</html>
+</html> 
 ```
 
-O `<html` é a tag container raiz/root para todo o contéudo que será trabalhado no projeto. `lang=" "` é o parâmetro que vai indicar a linguagem de todo o projeto, e o que fica dentro de `" "` é o valor desse parâmetro, no caso o idioma português do Brasil `pt-BR` contém símbolos e caracteres que em outras linguagens não são utilizadas, então ao colocar esse valor no parâmetro indicamos que esse projeto irá conter todos os caracteres desse idioma e possibilitará que seja lido pelo browser. 
+O `<html` Tag container raiz/root para todo o contéudo que será renderizado no browser. Ela precisa abrir na primeira linha e seu fechamento fica na última linha. 
+
+`lang=" "` é o parâmetro que vai indicar a linguagem de todo o projeto, e o que fica dentro de `" "` é o valor desse parâmetro, no caso o idioma português do Brasil `pt-BR` contém símbolos e caracteres que em outras linguagens não são utilizadas, então ao colocar esse valor no parâmetro indicamos que esse projeto irá conter todos os caracteres , dessa forma se um usuário que não entende esse idioma, poderá ser traduzido para sua linguagem natal. 
+
+`<html lang="pt-BR">`
 
 * Contém fechamento `</html>` 
 
 ***
 
-`<head>` Cabeça da página - É o container para outras tags exclusivas que não são visíveis e sim de definições e configurações. 
+`<head>` Cabeçalho da página - Responsável por separar as informações que estão sendo passadas parao browser, ou seja, o container para outras tags exclusivas que não são visíveis e sim de definições e configurações. 
 
 * Filho de `<html>`
 * Contém fechamento `</head>` 
+
+***
+
+<meta charset="UTF-8"> Responsável para passar informações do *encoding* ao browser sobre os caracteres especiais que a linguagem do projeto contém.
+
+`meta` Passa as informações para o browser.
+`charset` Atributo que informa o valor a ser inserido no projeto.
+`UTF-8` É o dicionário que contém todos os caracteres de todas as linguagens, inclusive o português do Brasil.
 
 ***
 
@@ -708,9 +721,9 @@ Quando uma programação *method* é do tipo *get* as informações são direcio
     * (xx)9xxxx-xxxx 
 
     `<input type="number">` Permite selecionar números. 
-    * `<input type="number" name=f_numero step="2" min="0" max="10">` Sendo indicação `min="0"` que o mínimo é 0 e `max="x"` o número máximo que aparecerá para selecionar e `step="x"` indica quantos caracteres é permitido, nesse mesmo exemplo `step="2"` que será *xx* ou ainda `step="3"` *xxx* por preferência do programador.  
-
     
+    `<input type="number" name=f_numero step="2" min="0" max="10">` Sendo indicação `min="0"` que o mínimo é 0 e `max="x"` o número máximo que aparecerá para selecionar e `step="x"` indica quantos caracteres é permitido, nesse mesmo exemplo `step="2"` que será *xx* ou ainda `step="3"` *xxx* por preferência do programador.  
+  
     `<input type="search">` Campo de texto próprio para entrada de string para pesquisa. Contém padrão pré-definido, podendo usar JavaScript e PHP em sua elaboração. 
     
     
@@ -756,6 +769,6 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 
 > :construction: Esse documento está em construção 
 > 
-> Fernanda Evangelista 
+> :construction: Fernanda Evangelista 
 > 
-> 10/04/2022 :construction:
+> :construction: Última atualização 13/04/2022 
