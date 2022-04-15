@@ -21,6 +21,8 @@ SAIBA MAIS - Validate de estrutura [W3C](https://validator.w3.org/)
 - [E](#ancoraE)
 - [F](#ancoraF)
 - [Formulário](#ancoraformulario)
+- [F](#ancoraF)
+- [H](#ancoraH)
 
 <a id="ancoraPRINCIPAL"></a>
 
@@ -93,6 +95,7 @@ O `<html` Tag container raiz/root para todo o contéudo que será renderizado no
 * Contém fechamento `</p>`
 
 ***
+Heading *h1* à *h6*
 
 `<h1>` 
 
@@ -105,12 +108,14 @@ O `<html` Tag container raiz/root para todo o contéudo que será renderizado no
 `<h5>`
 
 `<h6>`
-Tags de cabeçalho, ou seja, títulos do conteúdo de texto que será descrito na página. 
-* Pré formatação padrão em sistema de hierarquia de níveis   
-* Categoria de cabeçalho
+
+Tags de cabeçalho, ou seja, títulos do conteúdo de texto que será descrito na página. sua importãncia é hierarquico de níveis *1* à nível *6*.
+*h1* de mais importância, *h2* subtítulo de *h1* e assim por diante.
+
 * Display: Block 
-* Elemento de Fluxo 
+* Categoria: Fluo e fraseado
 * Contém fechamento `</h1> </2> </3> </h4> </h5> </h6>`
+* Pré formatação padrão em sistema de hierarquia de níveis  
 
 Exemplo: 
 
@@ -882,8 +887,70 @@ Quando uma programação *method* é do tipo *get* as informações são direcio
 * Atributos: `cols`; `rows`; `maxlength`; `autofocus`;
 * Contém fechamento: `</textarea>`
 
+***
+
+<a id="ancoraF"></a>
+# F 
+
+## FONTES
+
+Para títulos é indicado que utilize fontes serifadas caso seja a preferência do desenvolvedor, já para fontes de textos, não é indicado fontes serifadas, pois atrabalham na leitura limpa do conteúdo da web. 
+
+* [Google](https://fonts.google.com/) disponibiliza fontes para utilização
+  Copiando o link da fonte desejada e colar em *head*.  
+  * A fonte é definida por CSS, por tanto mais informações estarão em um contéudo de CSS que publicarei em breve. 
+
+
+
+<a id="ancoraH"></a>
+
+# H
+
+`<header>` Cabeçalho da seção em que ela está inserida, ou seja, representa a parte de introdução da seção, totalmente diferente de *head*.
+
+Exemplo de utilização:
+
+```
+<article>
+      <header img src="#"> 
+              <h2>Dicionário HTML5 para hacking</h2> 
+                  <p>Frase visível</p>
+                  <p>Frase visível</p>
+      </header>
+      <p>Continuação visível do conteúdo</p>
+</article>
+```
+
+* Display: Block
+* Categoria: Fluxo e Cabeçalho 
+* Atributos: Globais
+* Contém fechamento: `</header>`
 
 ***
+
+`<hr>` Horizontal Hule - Barra horizontal. Representa uma visisão com elemento visível. 
+
+      ```
+      <p>Frase final do conteúdo</p>
+      <hr>
+      <p>Novo conteúdo</p>
+      ``` 
+      
+   Frase final do conteúdo
+   ##
+   Novo conteúdo
+   
+* Display: Block
+* Categoria: Fluxo
+* Atributos: Globais
+* Não contém fechamento
+* Pode ser alterada por CSS. *Documento de CSS em breve.* 
+* 
+***
+
+
+
+
 ***
 ***
 
@@ -920,4 +987,4 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 > 
 > :construction: Fernanda Evangelista 
 > 
-> :construction: Última atualização 13/04/2022 
+> :construction: Última atualização 14/04/2022 
