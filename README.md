@@ -7,6 +7,7 @@ Esse dicionário é apenas um guia sobre tags, por tanto, não é um curso para 
 > HTML é uma Linguagem de Marcação de HiperTexto - Independente do editor de texto utilizado essa linguagem de marcação poderá ser utilizada na construção de páginas de web. 
 
 SAIBA MAIS - Validate de estrutura [W3C](https://validator.w3.org/)
+SAIBA MAIS - Simbolos ecaracteres [Unicode-table](https://unicode-table.com/pt/)
 
 ***
 
