@@ -24,6 +24,8 @@ SAIBA MAIS - Simbolos ecaracteres [Unicode-table](https://unicode-table.com/pt/)
 - [Formulário](#ancoraformulario)
 - [F](#ancoraF)
 - [H](#ancoraH)
+- [I](#ancoraI)
+- [K](#ancoraK)
 
 <a id="ancoraPRINCIPAL"></a>
 
@@ -665,7 +667,7 @@ Exemplos de rodapés de páginas web podem contém muitos elementos diferentes c
 </from> 
 ```    
 
-*action* e*method* vão funcionar quando um botão for acionado (usado PHP para isso) 
+*action* e *method* vão funcionar quando um botão for acionado (usado PHP para isso) 
 Quando uma programação *method* é do tipo *get* as informações são direcionadas e gravadas diretamente na URL o que pode causar uma vulnerabilidade, já do tipo *post* pode ser direcionado diretamente impresso na página, mas esse assunto será explicado posteriormente conforme avançamos em hacking. 
 
 * Display: Block
@@ -682,7 +684,7 @@ Quando uma programação *method* é do tipo *get* as informações são direcio
 
 ##
 
-`<label>` Representa uma legenda - Locasl onde o usuário irá preencher - útil no trabalho com formulários. Ela especifica qual o "rótulo" do *input* (a que se refere o input), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.
+`<label>` Representa uma legenda - Local onde o usuário irá preencher - útil no trabalho com formulários. Ela especifica qual o "rótulo" do *input* (a que se refere o input), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.
 
 * Display: Inline
 * Categoria: Fluxo; Fraseado;
@@ -901,10 +903,10 @@ Para títulos é indicado que utilize fontes serifadas caso seja a preferência 
   Copiando o link da fonte desejada e colar em *head*.  
   * A fonte é definida por CSS, por tanto mais informações estarão em um contéudo de CSS que publicarei em breve. 
 
+***
 
 
 <a id="ancoraH"></a>
-
 # H
 
 `<header>` Cabeçalho da seção em que ela está inserida, ou seja, representa a parte de introdução da seção, totalmente diferente de *head*.
@@ -946,19 +948,43 @@ Exemplo de utilização:
 * Atributos: Globais
 * Não contém fechamento
 * Pode ser alterada por CSS. *Documento de CSS em breve.* 
-* 
-***
-
-
 
 
 ***
+
+<a id="ancoraI"></a>
+
+## I
+
+`<i>` Elmento para dar destaque em termos com certa importância. ITÁLICO.
+
+* Display: Inline
+* Categoria: Fluxo e Fraseado
+* Contém fechamento: `</i>`
+
 ***
 
-* Display:
-* Categoria: 
-* Atributos:
-* Contém fechamento:
+`<iframe>` Inserindo uma janela dentro de outra janela, ou seja, um quadro embutido é usado para incorporar outro documento no atual.
+
+* Display: Block
+* Atributos: `allow`; `allowfullscreen`; `allowpaymentrequest`; `height`; `loading`; `name`; `referrerpolicy`; `sandbox`; `src`; `srcdoc`; `width`; Globais; 
+* Contém fechamento: `</iframe>`
+
+***
+
+`<img>` Incorporar imagens no documento através de url ou arquivo que irá renderizar.
+
+`<img src="URL-AQUI" alt="Imagem não encontrada">`
+
+ou
+
+`<img src"ARQUIVO-AQUI">` 
+
+* Display: Inline
+* Categorria: Fluxo, Fraseado, Incorporado e *Interativo*. 
+* Não contém fechamento 
+
+***
 
 `<ins>` Representa uma inserção/ algo que foi inserigo ao texto original. Sublinhado.
 
@@ -969,10 +995,30 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 
 * Display: Inline-block
 * Categorria: Fluxo, contido por fraseado
-* Atributos: Cite; Datetime; Globais
+* Atributos: Cite; Datetime; Globais;
 * Contém fechamento `</ins>`
 
 ***
+
+<a id="ancoraK"></a>
+
+## K 
+
+
+
+
+***
+***
+***
+***
+***
+***
+
+
+* Display:
+* Categoria: 
+* Atributos:
+* Contém fechamento:
 
 `<pre>` Apresenta um bloco de texto pré formatado. 
 
