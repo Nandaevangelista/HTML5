@@ -976,7 +976,7 @@ Exemplo de utilização:
 
 ***
 
-`<iframe>` Inserindo uma janela dentro de outra janela, ou seja, um quadro embutido é usado para incorporar outro documento no atual.
+`<iframe>` Inserindo uma janela dentro de outra janela, ou seja, um quadro embutido é usado para incorporar outro documento no atual. Um exemplo comum é incorporar um mapana página.
 
 `<iframe src="linka_qui"></iframe>` Para abrir a janela deseja na página.
 
@@ -985,6 +985,10 @@ Exemplo de utilização:
 <a href="http://link_desejado" target="nome_desejado">Texto visível formato link</a>
 <iframe src="link" name="nome_do_target_acima"></iframe>
 ```
+
+**Incorporando mapas:**
+
+   * Pesquisando o endereço desejado em [Google maps](https://google.com/maps), em MENU(dentro da interface do *google maps*) selecionar a opção *Compartilhar ou incorporar mapa*, abrirá uma janela com *link* ou *incorporar um mapa*, escolhendo a opçãode incorporar copie o código e cole o `<iframe>` do mapa em seu projeto no local onde deseja que o mapa seja renderizado.  
 
 * Display: Block
 * Atributos: `allow`; `allowfullscreen`; `allowpaymentrequest`; `height`; `loading`; `name`; `referrerpolicy`; `sandbox`; `src`; `srcdoc`; `width`; Globais; 
