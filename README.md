@@ -26,6 +26,8 @@ SAIBA MAIS - Simbolos ecaracteres [Unicode-table](https://unicode-table.com/pt/)
 - [H](#ancoraH)
 - [I](#ancoraI)
 - [K](#ancoraK)
+- [L](#ancoraM)
+- 
 
 <a id="ancoraPRINCIPAL"></a>
 
@@ -75,13 +77,23 @@ O `<html` Tag container raiz/root para todo o contéudo que será renderizado no
 
 ***
 
- `<link rel="stylesheet" href="style.css">` Dentro do *head* vai *style.css* extenção de arquivo CSS3 para a aplicação 
+`<link>` A tag *link* serve para vincular arquivos externos à página. 
+
+ `<link rel="stylesheet" href="style.css">` Dentro do *head* vai a extenção de CSS3 *style.css* Veja a explicação apronfundada abaixo.
+ 
+ `<link rel=”alternate” href=”http://site.com.br/” hreflang=”en”>` Essa implementação orienta a utilizar outros idiomas. 
 
 `<link` Ligação dos arquivos 
 `rel=" "` Relação desse link 
 `stylesheet` Folha de estilo 
 `href=" "` Endereço de referência - E o valor é onde o arquivo está 
 
+`<link rel="icon" sizes="32x32" href="favion.png">` Para acrescentar favicon. Sizes para que o navegador utilize o tamanho correto quando for renderizar 
+
+* Display: None
+* Categoria: Metadados
+* Atributos: 
+* Não contém fechamento
 ***
 
 `<body>` Tag Corpo da página. É o container de todos os elementos vísivel da página.
@@ -966,9 +978,18 @@ Exemplo de utilização:
 
 `<iframe>` Inserindo uma janela dentro de outra janela, ou seja, um quadro embutido é usado para incorporar outro documento no atual.
 
+`<iframe src="linka_qui"></iframe>` Para abrir a janela deseja na página.
+
+```
+<a href="sua_pagina.html" target="nome_desejado">Texto visível formato link</a>
+<a href="http://link_desejado" target="nome_desejado">Texto visível formato link</a>
+<iframe src="link" name="nome_do_target_acima"></iframe>
+```
+
 * Display: Block
 * Atributos: `allow`; `allowfullscreen`; `allowpaymentrequest`; `height`; `loading`; `name`; `referrerpolicy`; `sandbox`; `src`; `srcdoc`; `width`; Globais; 
 * Contém fechamento: `</iframe>`
+
 
 ***
 
@@ -1004,10 +1025,53 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 
 ## K 
 
+`<kbd>` Representa entrada e saída de usuário destacando sequências de teclas para ocomando, defindo com formatação prória o texto em destaque.
 
+`<p>Para <kbd>copiar</kbd> utilize as teclas <kbd>CTRL + C</kbd>.`
 
+* Display: Inline
+* Categoria: Fluxo e Fraseado 
+* Atributos: Globais
+* Contém fechamento: `</kbd>`
 
 ***
+
+<a id="ancoraM"></a>
+
+##M
+
+`<mark>` Destacar texto com pré definição de visualmente marca texto amarelo, podendo ser modificado conforme a preferência através de `class=""` em CSS.
+
+`<p>Seu guia de html para <mark>construir sua base</mark> como hacker!</p>`
+
+
+* Display: None
+* Categoria: Fluxo e Fraseado
+* Atributos: Globais
+* Contém fechamento:
+
+***
+
+`<map>` tendo filha a *tag* `<area>` transformando em área clicável. Podendo ser usada com uma imagem como no exemplo dessa explicação, colocando uma área de clique dentro da imagem.
+
+```
+<img src="imagem.png">
+<map name="nome_de_sua_preferencia">
+   <area alt="Texto_de_legenda" shape="forma_que_deseja" href="link/arquivo" coords="250,340">
+</map>
+```
+
+* Display: None
+* Categoria: Fluxo e Fraseado
+* Atributos: 
+  * `alt=" "`texto alternativo;  
+  * `shape=" "` Tipo da forma que deseja para a área clicável (rect-retangular; circle=circular; poly-poligono;); 
+  * `coords=" "` coordenadas; Podendo observar numero de coordenada através do programa paint por exemplo
+* `<map>` contém fechamento: `</map>`  
+* `<area>` não contém fechamento
+
+***
+
 ***
 ***
 ***
