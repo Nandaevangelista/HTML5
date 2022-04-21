@@ -70,65 +70,78 @@ Padrões para especificar conteúdo, relação, ou a configuração da metadado 
 
 * `<meta http-equiv="" content="">` Configurações do browser
 
-  `<meta http-equiv="cache-control" content="">` *cache-control* vai especificar somente para versões *http1.1*
-  `<meta http-equiv="cache-control" content="public">` A página ficará armazenada no *cache* de todos os usuários, consequentemente todos terão acesso
-  `<meta http-equiv="cache-control" content="private">` Somente o usuário específico será acesso 
-  `<meta http-equiv="cache-control" content="no-cache">` Não armazena em *cache*
-  `<meta http-equiv="cache-control" content="no-store">` *Cache* temporário, nao armazenando nenhuma informação.
-  
-  `<meta http-equiv="pragma" content="">` A página ficará armazenada em pragma, obtem as mesmas configurações (*public*, *provate*, *no-cache*, *no-store*)
-  
-  
-  `<meta http-equiv="content-language" content="">` Especifica que tipo de idioma tem na página
-  `<meta http-equiv="content-language" content="pt-BR,en-US">` Podendo especificar mais de um idioma
-  
-  `<meta http-equiv="content-type" content="">` Permite especificar o tipo de conteúdo da página
-  `<meta http-equiv="content-type" content="text/html">` Página normal em html
-  `<meta http-equiv="content-type" content="text/html,charset=UTF-8">` Caracteres especiais, veja o exemplo mais aprofundado mais abaixo.
-  
-  `<meta http-equiv="expires" content="">` Fica armazenado em cache e determina quando a página irá expirar.
-  `<meta http-equiv="expires" content="0">` Expira automaticamente, obrigando o browser fazer nova pesquisa de conteúdo.
-  `<meta http-equiv="expires" content="sun, 21 april 2024 23:59">` Especificando o dia e horário que a página irá expirar, ou seja, a partir dessa data ele não irá utilizar o que está armazenado no cache. 
-  
-  `<meta http-equiv="refresh" content="tempo-aqui">` Ele recarrega a página depois do tempo especificado
-  `<meta http-equiv="refresh" content="5;url=">` Redireciona para uma url específica depois do tempo determinado
+  * `<meta http-equiv="cache-control" content="">` *cache-control* vai especificar somente para versões *http1.1*
+  * `<meta http-equiv="cache-control" content="public">` A página ficará armazenada no *cache* de todos os usuários, consequentemente todos terão acesso
+  * `<meta http-equiv="cache-control" content="private">` Somente o usuário específico será acesso 
+  * `<meta http-equiv="cache-control" content="no-cache">` Não armazena em *cache*
+  * `<meta http-equiv="cache-control" content="no-store">` *Cache* temporário, nao armazenando nenhuma informação.
+
+##
+
+* `<meta http-equiv="pragma" content="">` A página ficará armazenada em pragma, obtem as mesmas configurações (*public*, *provate*, *no-cache*, *no-store*)
+    
+  * `<meta http-equiv="content-language" content="">` Especifica que tipo de idioma tem na página
+  * `<meta http-equiv="content-language" content="pt-BR,en-US">` Podendo especificar mais de um idioma
+
+##
+
+* `<meta http-equiv="content-type" content="">` Permite especificar o tipo de conteúdo da página
+  * `<meta http-equiv="content-type" content="text/html">` Página normal em html
+  * `<meta http-equiv="content-type" content="text/html,charset=UTF-8">` Caracteres especiais, veja o exemplo mais aprofundado mais abaixo.
+
+##
+
+* `<meta http-equiv="expires" content="">` Fica armazenado em cache e determina quando a página irá expirar.
+  * `<meta http-equiv="expires" content="0">` Expira automaticamente, obrigando o browser fazer nova pesquisa de conteúdo.
+  * `<meta http-equiv="expires" content="sun, 21 april 2024 23:59">` Especificando o dia e horário que a página irá expirar, ou seja, a partir dessa data ele não irá utilizar o que está armazenado no cache. 
+
+##
+
+* `<meta http-equiv="refresh" content="tempo-aqui">` Ele recarrega a página depois do tempo especificado
+  * `<meta http-equiv="refresh" content="5;url=">` Redireciona para uma url específica depois do tempo determinado
   
 ## NAME 
 
 * `<meta name="" content="">` Relações que não correspondem ao http 
+  * `<meta name="author" content="nome-aqui">` O desenvolvedor da página.
+  * `<meta name="copyright" content="direitos-aqui">` Para especificar os direitos de desenvolvimento da página
+  * `<meta name="description" content="descrição-aqui">` Descrição sobre a página
+  * `<meta name="keywords" content="palavras-aqui">` Palavras chaves para o motor de busca do site (separadas por vírgula)
 
-  `<meta name="author" content="nome-aqui">` O desenvolvedor da página.
+##
 
-  `<meta name="copyright" content="direitos-aqui">` Para especificar os direitos de desenvolvimento da página
-  `<meta name="description" content="descrição-aqui">` Descrição sobre a página
-  
-  `<meta name="keywords" content="palavras-aqui">` Palavras chaves para o motor de busca do site (separadas por vírgula)
-  
-  `<meta name="robot" content="">` Robôs de busca
-  `<meta name="robot" content="all">` O robô não recebe informações da página
-  `<meta name="robot" content="index">` Podem incluir a página em motores de busca 
-  `<meta name="robot" content="follow">` Pode indexar e seguir os links da página
-  `<meta name="robot" content="NoFollow">` Ele pode indexar mas não segue a página
-  `<meta name="robot" content="None">` Os robôs ignorarão completamente a página
-  `<meta name="robot" content="NoArquive">` Os arquivos não aparecerão em listas de buscas 
-  
-  `<meta name="generator" content="">` Especifica qual software foi usado para criar a página
-  `<meta name="generator" content="VS Code">` Exemplo de software: Vs Code
-  
-  `<meta name="rating" content="">` Controle de acesso por idade 
-  `<meta name="rating" content="general">` Qualquer pessoa de qualquer idade pode acessar o conteúdo da página
-  `<meta name="rating" content="16year">` Acima de 16 anos
-  `<meta name="rating" content="mature">` Somente idade adulta
-  
-  `<meta name="viewport" content="">` Para aplicações para tablets e smartphones
-  `<meta name="viewport" content="width=device-width, initial-scale=1.0">` Exemplo de um tamanho padrão
-  
-  
-`<meta charset="UTF-8">` Responsável para passar informações do *encoding* ao browser sobre os caracteres especiais que a linguagem do projeto contém.
+* `<meta name="robot" content="">` Robôs de busca
+  * `<meta name="robot" content="all">` O robô não recebe informações da página
+  * `<meta name="robot" content="index">` Podem incluir a página em motores de busca 
+  * `<meta name="robot" content="follow">` Pode indexar e seguir os links da página
+  * `<meta name="robot" content="NoFollow">` Ele pode indexar mas não segue a página
+  * `<meta name="robot" content="None">` Os robôs ignorarão completamente a página
+  * `<meta name="robot" content="NoArquive">` Os arquivos não aparecerão em listas de buscas 
 
-`meta` Passa as informações para o browser.
-`charset` Atributo que informa o valor a ser inserido no projeto.
-`UTF-8` É o dicionário que contém todos os caracteres de todas as linguagens, inclusive o português do Brasil.
+##
+
+* `<meta name="generator" content="">` Especifica qual software foi usado para criar a página
+  * `<meta name="generator" content="VS Code">` Exemplo de software: Vs Code
+
+##
+
+* `<meta name="rating" content="">` Controle de acesso por idade 
+  * `<meta name="rating" content="general">` Qualquer pessoa de qualquer idade pode acessar o conteúdo da página
+  * `<meta name="rating" content="16year">` Acima de 16 anos
+  * `<meta name="rating" content="mature">` Somente idade adulta
+
+##
+
+* `<meta name="viewport" content="">` Para aplicações para tablets e smartphones
+  * `<meta name="viewport" content="width=device-width, initial-scale=1.0">` Exemplo de um tamanho padrão
+  
+##
+
+* `<meta charset="UTF-8">` Responsável para passar informações do *encoding* ao browser sobre os caracteres especiais que a linguagem do projeto contém.
+
+  * `meta` Passa as informações para o browser.
+  * `charset` Atributo que informa o valor a ser inserido no projeto.
+  * `UTF-8` É o dicionário que contém todos os caracteres de todas as linguagens, inclusive o português do Brasil.
 
 ***
 
@@ -143,21 +156,20 @@ Padrões para especificar conteúdo, relação, ou a configuração da metadado 
 
 `<link>` A tag *link* serve para vincular arquivos externos à página. 
 
- `<link rel="stylesheet" href="style.css">` Dentro do *head* vai a extenção de CSS3 *style.css* Veja a explicação apronfundada abaixo.
- 
- `<link rel=”alternate” href=”http://site.com.br/” hreflang=”en”>` Essa implementação orienta a utilizar outros idiomas. 
+* `<link rel="stylesheet" href="style.css">` Dentro do *head* vai a extenção de CSS3 *style.css* Veja a explicação apronfundada abaixo.
+* `<link rel=”alternate” href=”http://site.com.br/” hreflang=”en”>` Essa implementação orienta a utilizar outros idiomas. 
+  * `<link` Ligação dos arquivos 
+  * `rel=" "` Relação desse link 
+  * `stylesheet` Folha de estilo 
+  * `href=" "` Endereço de referência - E o valor é onde o arquivo está 
 
-`<link` Ligação dos arquivos 
-`rel=" "` Relação desse link 
-`stylesheet` Folha de estilo 
-`href=" "` Endereço de referência - E o valor é onde o arquivo está 
-
-`<link rel="icon" sizes="32x32" href="favion.png">` Para acrescentar favicon. Sizes para que o navegador utilize o tamanho correto quando for renderizar 
+* `<link rel="icon" sizes="32x32" href="favion.png">` Para acrescentar favicon. Sizes para que o navegador utilize o tamanho correto quando for renderizar 
 
 * Display: None
 * Categoria: Metadados
 * Atributos: 
 * Não contém fechamento
+
 ***
 
 `<body>` Tag Corpo da página. É o container de todos os elementos vísivel da página.
@@ -198,17 +210,13 @@ Tags de cabeçalho, ou seja, títulos do conteúdo de texto que será descrito n
 
 Exemplo: 
 
-`<h1>Título de nível 1</h1>`
+  * `<h1>Título de nível 1</h1>`
+  * `<h2>Título de nível 2</h2>`
+  * `<h3>Título de nível 3</h3>`
+  * `<h4>Título de nível 4</h4>`
+  * `<h5>Título de nível 5</h5>`
+  * `<h6>Título de nível 6</h6>` 
 
-`<h2>Título de nível 2</h2>`
-
-`<h3>Título de nível 3</h3>`
-
-`<h4>Título de nível 4</h4>`
-
-`<h5>Título de nível 5</h5>`
-
-`<h6>Título de nível 6</h6>` 
 # Título de nível 1
 ## Título de nível 2
 ### Título de nível 3
@@ -229,6 +237,7 @@ Há dois tipos de identificadores *class* e *id*. Veja abaixo:
 ***
 
 <a id="ancoraA"></a>
+
 # A
 
 `<a>` - Tag âncora - para links e conexões na página web como: arquivos, dowload, áudio, vídeo, imagem, endereços de emails, ligações na mesma página ou endereços na URL.
@@ -1166,4 +1175,4 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 > 
 > :construction: Fernanda Evangelista 
 > 
-> :construction: Última atualização 14/04/2022 
+> :construction: Última atualização 21/04/2022 
