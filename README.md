@@ -62,7 +62,69 @@ O `<html` Tag container raiz/root para todo o contéudo que será renderizado no
 
 ***
 
-<meta charset="UTF-8"> Responsável para passar informações do *encoding* ao browser sobre os caracteres especiais que a linguagem do projeto contém.
+`<meta>` Tag responsável por fornecer configuração e definição para o browser dentro de *head*. Metadatos ou metaconfigurações.  
+
+Padrões para especificar conteúdo, relação, ou a configuração da metadado *name* ou *equiv*:  
+
+## EQUIV
+
+* `<meta http-equiv="" content="">` Configurações do browser
+
+  `<meta http-equiv="cache-control" content="">` *cache-control* vai especificar somente para versões *http1.1*
+  `<meta http-equiv="cache-control" content="public">` A página ficará armazenada no *cache* de todos os usuários, consequentemente todos terão acesso
+  `<meta http-equiv="cache-control" content="private">` Somente o usuário específico será acesso 
+  `<meta http-equiv="cache-control" content="no-cache">` Não armazena em *cache*
+  `<meta http-equiv="cache-control" content="no-store">` *Cache* temporário, nao armazenando nenhuma informação.
+  
+  `<meta http-equiv="pragma" content="">` A página ficará armazenada em pragma, obtem as mesmas configurações (*public*, *provate*, *no-cache*, *no-store*)
+  
+  
+  `<meta http-equiv="content-language" content="">` Especifica que tipo de idioma tem na página
+  `<meta http-equiv="content-language" content="pt-BR,en-US">` Podendo especificar mais de um idioma
+  
+  `<meta http-equiv="content-type" content="">` Permite especificar o tipo de conteúdo da página
+  `<meta http-equiv="content-type" content="text/html">` Página normal em html
+  `<meta http-equiv="content-type" content="text/html,charset=UTF-8">` Caracteres especiais, veja o exemplo mais aprofundado mais abaixo.
+  
+  `<meta http-equiv="expires" content="">` Fica armazenado em cache e determina quando a página irá expirar.
+  `<meta http-equiv="expires" content="0">` Expira automaticamente, obrigando o browser fazer nova pesquisa de conteúdo.
+  `<meta http-equiv="expires" content="sun, 21 april 2024 23:59">` Especificando o dia e horário que a página irá expirar, ou seja, a partir dessa data ele não irá utilizar o que está armazenado no cache. 
+  
+  `<meta http-equiv="refresh" content="tempo-aqui">` Ele recarrega a página depois do tempo especificado
+  `<meta http-equiv="refresh" content="5;url=">` Redireciona para uma url específica depois do tempo determinado
+  
+## NAME 
+
+* `<meta name="" content="">` Relações que não correspondem ao http 
+
+  `<meta name="author" content="nome-aqui">` O desenvolvedor da página.
+
+  `<meta name="copyright" content="direitos-aqui">` Para especificar os direitos de desenvolvimento da página
+  `<meta name="description" content="descrição-aqui">` Descrição sobre a página
+  
+  `<meta name="keywords" content="palavras-aqui">` Palavras chaves para o motor de busca do site (separadas por vírgula)
+  
+  `<meta name="robot" content="">` Robôs de busca
+  `<meta name="robot" content="all">` O robô não recebe informações da página
+  `<meta name="robot" content="index">` Podem incluir a página em motores de busca 
+  `<meta name="robot" content="follow">` Pode indexar e seguir os links da página
+  `<meta name="robot" content="NoFollow">` Ele pode indexar mas não segue a página
+  `<meta name="robot" content="None">` Os robôs ignorarão completamente a página
+  `<meta name="robot" content="NoArquive">` Os arquivos não aparecerão em listas de buscas 
+  
+  `<meta name="generator" content="">` Especifica qual software foi usado para criar a página
+  `<meta name="generator" content="VS Code">` Exemplo de software: Vs Code
+  
+  `<meta name="rating" content="">` Controle de acesso por idade 
+  `<meta name="rating" content="general">` Qualquer pessoa de qualquer idade pode acessar o conteúdo da página
+  `<meta name="rating" content="16year">` Acima de 16 anos
+  `<meta name="rating" content="mature">` Somente idade adulta
+  
+  `<meta name="viewport" content="">` Para aplicações para tablets e smartphones
+  `<meta name="viewport" content="width=device-width, initial-scale=1.0">` Exemplo de um tamanho padrão
+  
+  
+`<meta charset="UTF-8">` Responsável para passar informações do *encoding* ao browser sobre os caracteres especiais que a linguagem do projeto contém.
 
 `meta` Passa as informações para o browser.
 `charset` Atributo que informa o valor a ser inserido no projeto.
@@ -72,7 +134,9 @@ O `<html` Tag container raiz/root para todo o contéudo que será renderizado no
 
 `<title>` filha de `<head>` que representa o título da página que é mostrado na barra de título no browser. 
 
-* Filho de `<head>`
+* Display: None
+* Categoria: Metadados
+* Filho de `<head>` mas não tem filhos.
 * Contém fechamento `</title>`
 
 ***
