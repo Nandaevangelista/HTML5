@@ -26,8 +26,8 @@ SAIBA MAIS - Simbolos ecaracteres [Unicode-table](https://unicode-table.com/pt/)
 - [H](#ancoraH)
 - [I](#ancoraI)
 - [K](#ancoraK)
-- [L](#ancoraM)
-- 
+- [M](#ancoraM)
+- [N](#ancoraN)
 
 <a id="ancoraPRINCIPAL"></a>
 
@@ -1039,7 +1039,7 @@ Exemplo de utilização:
 
 <a id="ancoraI"></a>
 
-## I
+# I
 
 `<i>` Elmento para dar destaque em termos com certa importância. ITÁLICO.
 
@@ -1100,7 +1100,7 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 
 <a id="ancoraK"></a>
 
-## K 
+# K 
 
 `<kbd>` Representa entrada e saída de usuário destacando sequências de teclas para ocomando, defindo com formatação prória o texto em destaque.
 
@@ -1115,7 +1115,7 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 
 <a id="ancoraM"></a>
 
-##M
+# M
 
 `<mark>` Destacar texto com pré definição de visualmente marca texto amarelo, podendo ser modificado conforme a preferência através de `class=""` em CSS.
 
@@ -1149,7 +1149,56 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 
 ***
 
+`<meter>` Representa uma medida escalar dentro de um intervalo. Uma barra de progressão com o valor de uma medida, ou seja, uma barra com valores em cor que poderá indicar um alerta. 
+Cores padrões: Cinza(sem valor); Verde(Valor baixo); Amarelo(Valor alto);
+
+   `max=" "` maior faixa de valor da medida
+    
+   `min=" "` menor faixa de valor da medida 
+    
+   `low=" "` Atributo de alerta. A partir de qual valor haverá alerta 
+    
+   `high=" "` Alerta, valor máximo que irá alertar
+    
+   `optimum=" "` Valor ideal 
+
+* Display: Inline
+* Categoria: Fluxo e Fraseado
+* Atributos: `value` `max` `min` `high` `low` `optimum`
+* Contém fechamento: `</meter>`
+
 ***
+
+<a id="ancoraN"></a>
+
+# N
+
+`<nav>` Representa uma seção de navegação. Muito usado na construção de "MENU".
+
+  ```
+  <body>
+        <nav> 
+             <a href="x">Início</a>
+             <a href="y">Cursos</a>
+             <a href="z">Sobre</a>
+             <a href="f">Contato</a>
+        </nav>     
+  </body>
+  ```
+           
+* Display: Block
+* Categoria: Fluxo e Seção
+* Atributos: `<a>`
+* Contém fechamento: `</nav>`
+
+***
+
+`<noscript>` Tag que será usada quando a linguagem JavaScript estiver desabilitada, ou quando o browser não suportar as configurações da linguagem.
+
+* Display: Block
+* Categoria: Metadados; Fluxo; Seção; 
+* Contém fechamento: `</noscript>`
+
 ***
 ***
 ***
@@ -1175,4 +1224,4 @@ Quando aplicado o atributo `<datetime>` é para instruir o usuário a data e hor
 > 
 > :construction: Fernanda Evangelista 
 > 
-> :construction: Última atualização 21/04/2022 
+> :construction: Última atualização 26/04/2022 
