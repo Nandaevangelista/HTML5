@@ -28,6 +28,7 @@ SAIBA MAIS - Simbolos ecaracteres [Unicode-table](https://unicode-table.com/pt/)
 - [K](#ancoraK)
 - [M](#ancoraM)
 - [N](#ancoraN)
+- [O](#ancoraO)
 
 <a id="ancoraPRINCIPAL"></a>
 
@@ -1199,6 +1200,30 @@ Cores padrões: Cinza(sem valor); Verde(Valor baixo); Amarelo(Valor alto);
 * Categoria: Metadados; Fluxo; Seção; 
 * Contém fechamento: `</noscript>`
 
+
+***
+
+<a id="ancoraO"></a>
+
+# O
+
+`<object>` Tag que tem objetivo de incorporar ou vincular um arquivo externo ao HTML (audio, vídeo...).
+
+  `<object name="logo" wight="100" height="" data="logo.png"> </object>`
+
+```
+<object name="curso-pdf" wight="100" height="150"> 
+  <param name="src" value="arquivo.pdf">
+</object>
+```
+
+* Display: Inline
+* Categoria: Fluxo, Fraseado, Incorporado
+* Atributos: Globais, `<data> <type> <name> <usemap> <form> <width> <height>`
+* Filho: `<param>` 
+* Contém fechamento: `</object>`
+
+
 ***
 ***
 ***
@@ -1224,4 +1249,4 @@ Cores padrões: Cinza(sem valor); Verde(Valor baixo); Amarelo(Valor alto);
 > 
 > :construction: Fernanda Evangelista 
 > 
-> :construction: Última atualização 26/04/2022 
+> :construction: Última atualização 16/06/2022 
