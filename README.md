@@ -1211,17 +1211,43 @@ Cores padrões: Cinza(sem valor); Verde(Valor baixo); Amarelo(Valor alto);
 
   `<object name="logo" wight="100" height="" data="logo.png"> </object>`
 
+
 ```
 <object name="curso-pdf" wight="100" height="150"> 
   <param name="src" value="arquivo.pdf">
 </object>
 ```
 
+
 * Display: Inline
 * Categoria: Fluxo, Fraseado, Incorporado
 * Atributos: Globais, `<data> <type> <name> <usemap> <form> <width> <height>`
 * Filho: `<param>` 
 * Contém fechamento: `</object>`
+
+
+***
+
+`<ol>` Listas ordenadas - Elemento semelhante a tag `<ul>` , a diferença é visual, pois OL representa uma lista numerada e ul é uma lista não ordenada.
+
+
+```
+<ol start="#" type="#"> 
+    <li>HTML</li>
+        <ol type="1">
+           <li>Introdução</li>
+           <li>A à Z</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+</ol>
+```
+
+
+* Display: Block;
+* Categoria: Fluxo;
+* Filho: `<li>` 
+* Atributos: Globais; `start="(numero desejado que a lista inicie)"` ; `<type="(tipo de ordenação, seja números, letras e etc)">` ; `<reversed(inverte a representação da lista para decrescente/inversa dos elementos)>`
+* Contém fechamento: `</ol>` 
 
 
 ***
@@ -1249,4 +1275,4 @@ Cores padrões: Cinza(sem valor); Verde(Valor baixo); Amarelo(Valor alto);
 > 
 > :construction: Fernanda Evangelista 
 > 
-> :construction: Última atualização 16/06/2022 
+> :construction: Última atualização 21/06/2022 
